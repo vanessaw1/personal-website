@@ -1,11 +1,17 @@
-$primary: #9556eb;
+$primary: #6D64B9;
 $secondary: #cfcfea;
-$black: black;
-$white: white;
+$black: #3c3744;
+$white: #fbfff1;
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    background-color: $white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+
 }
 
 #header {
@@ -14,11 +20,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
+    height: 35px;
 
     .logo {
-        h1 {
-            margin: 0;
-        }
+        font-size: 35px;
     }
 
     .nav {
@@ -121,7 +126,6 @@ body {
         left: 18%;
         width: 300px;
         height: 300px;
-        font-size: 45px;
     }
 
     .text {
@@ -134,13 +138,67 @@ body {
 }
 
 #experience {
+    h1 {
+        color: $black;
+        margin: 50px 100px 0;
+    }
 
+    .section {
+        color: $white;
+        background-color: $primary;
+        margin: 25px 100px;
+        padding: 10px 30px 25px;
+
+        img {
+            vertical-align: text-top;
+            border: solid 5px $white;
+            width: 300px;
+            height: 300px;
+        }
+
+        p {
+            display: inline;
+        }
+    }
 }
 
 #projects{
+    background-color: $primary;
+    padding-bottom: 50px;
 
+    h1 {
+        color: $white;
+        margin: 50px 100px 0;
+        padding-top: 50px;
+    }
+
+    .section {
+        color: $black;
+        background-color: $white;
+        margin: 25px 100px;
+        padding: 10px 30px 25px;
+
+        img {
+            vertical-align: text-top;
+            border: solid 5px $white;
+            width: 300px;
+            height: 300px;
+        }
+
+        p {
+            display: inline;
+        }
+    }
 }
 
 #contact {
 
+}
+
+#footer{
+    height: 35px;
+    padding: 15px 30px;
+    background-color: $primary;
+    color: $white;
+    font-size: 20px;
 }
