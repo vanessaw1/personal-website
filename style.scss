@@ -1,7 +1,10 @@
 $primary: #6D64B9;
-$secondary: #cfcfea;
 $black: #3c3744;
 $white: #fbfff1;
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -21,6 +24,20 @@ h1 {
     justify-content: space-between;
     padding: 15px 30px;
     height: 35px;
+    position: fixed;
+    width: calc(100% - 60px);
+    z-index: 1;
+    border-bottom: solid 5px $white;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 
     .logo {
         font-size: 35px;
@@ -42,17 +59,7 @@ h1 {
             list-style-type: none;
         }
 
-        li:hover {
-            cursor: pointer;
-            background-color: $white;
-            color: $primary;
-        }
-
-        a {
-            text-decoration: none;
-            color: darkslategray;
-            padding: 18px 30px;
-        }
+        
     }
 
 }
@@ -61,7 +68,7 @@ h1 {
     height: 800px;
 
     svg {
-        margin-top: 40px;
+        margin-top: 80px;
 
         line {
             stroke: $black;
@@ -73,7 +80,7 @@ h1 {
     .text {
         .left {
             position: absolute;
-            top: 150px;
+            top: 120px;
             right: calc(50% + 60px);
             text-align: right;
             min-width: 500px;
@@ -97,6 +104,8 @@ h1 {
 }
 
 #about {
+    margin-top: 40px;
+    padding-top: 15px;
     height: 800px;
     position: relative;
     background-color: $primary;
@@ -132,10 +141,10 @@ h1 {
 
     h1 {
         position: absolute;
-        top: 20px;
+        top: 25px;
         right: 25%;
         width: 300px;
-        padding: 0px 40px;
+        padding: 10px 40px 0px;
         background-color: $primary;
     }
 
@@ -152,6 +161,8 @@ h1 {
 }
 
 #experience {
+    padding-top: 30px;
+
     h1 {
         color: $black;
         margin: 50px 100px 0;
@@ -163,10 +174,11 @@ h1 {
         margin: 25px 100px;
         padding: 10px 30px 25px;
 
-        .media {
+        .expand {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            align-items: flex-start;
         }
 
         img {
@@ -191,7 +203,7 @@ h1 {
 
 #projects{
     background-color: $primary;
-    padding-bottom: 50px;
+    padding: 1px 0px 10px; 
 
     h1 {
         color: $white;

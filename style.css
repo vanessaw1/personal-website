@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #fbfff1;
@@ -16,6 +20,18 @@ h1 {
   justify-content: space-between;
   padding: 15px 30px;
   height: 35px;
+  position: fixed;
+  width: calc(100% - 60px);
+  z-index: 1;
+  border-bottom: solid 5px #fbfff1;
+}
+#header a {
+  text-decoration: none;
+  color: #fbfff1;
+}
+#header a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 #header .logo {
   font-size: 35px;
@@ -34,22 +50,12 @@ h1 {
   padding: 0px 20px;
   list-style-type: none;
 }
-#header .nav li:hover {
-  cursor: pointer;
-  background-color: #fbfff1;
-  color: #6D64B9;
-}
-#header .nav a {
-  text-decoration: none;
-  color: darkslategray;
-  padding: 18px 30px;
-}
 
 #intro {
   height: 800px;
 }
 #intro svg {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 #intro svg line {
   stroke: #3c3744;
@@ -58,7 +64,7 @@ h1 {
 }
 #intro .text .left {
   position: absolute;
-  top: 150px;
+  top: 120px;
   right: calc(50% + 60px);
   text-align: right;
   min-width: 500px;
@@ -77,6 +83,8 @@ h1 {
 }
 
 #about {
+  margin-top: 40px;
+  padding-top: 15px;
   height: 800px;
   position: relative;
   background-color: #6D64B9;
@@ -107,10 +115,10 @@ h1 {
 }
 #about h1 {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 25%;
   width: 300px;
-  padding: 0px 40px;
+  padding: 10px 40px 0px;
   background-color: #6D64B9;
 }
 #about .text {
@@ -121,6 +129,9 @@ h1 {
   font-size: 20px;
 }
 
+#experience {
+  padding-top: 30px;
+}
 #experience h1 {
   color: #3c3744;
   margin: 50px 100px 0;
@@ -131,10 +142,11 @@ h1 {
   margin: 25px 100px;
   padding: 10px 30px 25px;
 }
-#experience .section .media {
+#experience .section .expand {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
 }
 #experience .section img {
   vertical-align: text-top;
@@ -154,7 +166,7 @@ h1 {
 
 #projects {
   background-color: #6D64B9;
-  padding-bottom: 50px;
+  padding: 1px 0px 10px;
 }
 #projects h1 {
   color: #fbfff1;
