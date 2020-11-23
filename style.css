@@ -14,11 +14,12 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 h3 {
   font-size: 25px;
+  font-weight: normal;
 }
 
 #header {
@@ -169,6 +170,14 @@ h3 {
   align-items: flex-start;
   font-size: 20px;
 }
+#experience .section .expand .text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+#experience .section .expand a {
+  color: #fbfff1;
+}
 #experience .section img {
   vertical-align: text-top;
   border: solid 5px #fbfff1;
@@ -185,6 +194,13 @@ h3 {
   padding: 5px;
   border: none;
   transform: rotate(0deg);
+  cursor: pointer;
+}
+#experience .section .location {
+  float: right;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-right: 25px;
 }
 #experience .section .caption {
   text-align: center;
@@ -210,6 +226,14 @@ h3 {
 #projects .section .content {
   display: flex;
   justify-content: space-between;
+}
+#projects .section .description {
+  font-size: 20px;
+}
+#projects .section .text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 #projects .section .icon {
   width: 50px;

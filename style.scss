@@ -18,11 +18,12 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 h3 {
     font-size: 25px;
+    font-weight: normal;
 }
 
 #header {
@@ -202,6 +203,16 @@ h3 {
             align-items: center;
             align-items: flex-start;
             font-size: 20px;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+            }
+
+            a {
+                color: $white;
+            }
         }
 
         img {
@@ -222,6 +233,14 @@ h3 {
             padding: 5px;
             border: none;
             transform: rotate(0deg);
+            cursor: pointer;
+        }
+
+        .location {
+            float: right;
+            font-size: 20px;
+            margin-top: 6px;
+            margin-right: 25px;
         }
 
         .caption {
@@ -251,6 +270,16 @@ h3 {
         .content {
             display: flex;
             justify-content: space-between;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
         }
 
         .icon {
