@@ -25,3 +25,19 @@ function switchToSlide(type, n) {
         }
     }
 }
+
+function expand(type) {
+    var caret = document.getElementsByClassName(type + " caret");
+    if (caret[0].style.transform === "rotate(180deg)") {
+        caret[0].style.transform = "rotate(0deg)";
+    } else {
+        caret[0].style.transform = "rotate(180deg)";
+    }
+
+    var section = document.getElementsByClassName(type + " expand");
+    if (section[0].style.display === "flex") {
+        section[0].style.display = "none";
+    } else {
+        section[0].style.display = "flex"
+    }
+}

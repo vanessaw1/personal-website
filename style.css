@@ -13,6 +13,14 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
 #header {
   background-color: #6D64B9;
   color: #fbfff1;
@@ -52,7 +60,7 @@ h1 {
 }
 
 #intro {
-  height: 800px;
+  height: 735px;
 }
 #intro svg {
   margin-top: 80px;
@@ -62,9 +70,12 @@ h1 {
   stroke-width: 5;
   stroke-linecap: round;
 }
+#intro a {
+  color: #3c3744;
+}
 #intro .text .left {
   position: absolute;
-  top: 120px;
+  top: 170px;
   right: calc(50% + 60px);
   text-align: right;
   min-width: 500px;
@@ -77,18 +88,23 @@ h1 {
 }
 #intro .text .right {
   position: absolute;
-  top: 350px;
-  left: calc(50% + 60px);
-  font-size: 20px;
+  bottom: 270px;
+  left: calc(50% + 40px);
+  font-size: 25px;
+  width: 650px;
 }
 
 #about {
   margin-top: 40px;
-  padding-top: 15px;
+  padding-bottom: 15px;
   height: 800px;
   position: relative;
   background-color: #6D64B9;
   color: #fbfff1;
+}
+#about .padding {
+  background-color: #fbfff1;
+  height: 65px;
 }
 #about svg line {
   stroke: #fbfff1;
@@ -97,7 +113,7 @@ h1 {
 }
 #about #backdrop {
   position: absolute;
-  top: 150px;
+  top: 225px;
   left: 25%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -106,7 +122,7 @@ h1 {
 }
 #about #profile {
   position: absolute;
-  top: 200px;
+  top: 275px;
   left: 25%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -115,7 +131,7 @@ h1 {
 }
 #about h1 {
   position: absolute;
-  top: 25px;
+  top: 75px;
   right: 25%;
   width: 300px;
   padding: 10px 40px 0px;
@@ -123,10 +139,14 @@ h1 {
 }
 #about .text {
   position: absolute;
-  top: 200px;
-  width: 30%;
+  top: 250px;
+  width: 35%;
+  min-width: 500px;
   left: calc(20% + 350px);
   font-size: 20px;
+}
+#about .text a {
+  color: #fbfff1;
 }
 
 #experience {
@@ -140,13 +160,14 @@ h1 {
   color: #fbfff1;
   background-color: #6D64B9;
   margin: 25px 100px;
-  padding: 10px 30px 25px;
+  padding: 10px 30px 40px;
 }
 #experience .section .expand {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   align-items: flex-start;
+  font-size: 20px;
 }
 #experience .section img {
   vertical-align: text-top;
@@ -159,19 +180,26 @@ h1 {
 }
 #experience .section .caret {
   float: right;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   border: none;
+  transform: rotate(0deg);
+}
+#experience .section .caption {
+  text-align: center;
+  font-size: 15px;
 }
 
 #projects {
   background-color: #6D64B9;
+  margin-top: 100px;
   padding: 1px 0px 10px;
 }
 #projects h1 {
   color: #fbfff1;
   margin: 50px 100px 0;
-  padding-top: 50px;
+  padding: 50px 0 20px;
 }
 #projects .section {
   color: #3c3744;
@@ -191,10 +219,11 @@ h1 {
 #projects .section img.container {
   height: 300px;
   width: 600px;
+  border: solid 2px #6D64B9;
+  margin-bottom: 3px;
 }
 #projects .section img.slides {
   vertical-align: text-top;
-  border: solid 2px #6D64B9;
   object-fit: cover;
   width: 70px;
   height: 70px;
@@ -211,7 +240,7 @@ h1 {
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #6D64B9;
+  background-color: #fbfff1;
   padding: 5px;
   text-align: center;
   cursor: pointer;
@@ -260,6 +289,9 @@ h1 {
   background-color: #fbfff1;
   color: #6D64B9;
   padding: 15px 32px;
+}
+#contact a {
+  text-decoration: none;
 }
 
 #footer {

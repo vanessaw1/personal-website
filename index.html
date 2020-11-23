@@ -23,9 +23,9 @@
 
 <div id="intro">
     <svg height="700" width="100%">
-        <line class="left" x1="0" y1="200" x2=50% y2="200" />
+        <line class="left" x1="0" y1="250" x2=50% y2="250" />
         <line class="right" x1="50%" y1="600" x2="100%" y2="600" />
-        <line class="center" x1="50%" y1="200" x2="50%" y2="600" />
+        <line class="center" x1="50%" y1="250" x2="50%" y2="600" />
     </svg> 
     <div class="text">
         <div class="left">
@@ -33,15 +33,21 @@
             <h2 class="title">Software Engineer</h2>
         </div>
         <div class="right">
-            <p>Senior at Cornell University <br>
-                Full-stack web developer <br>
+            <p>Senior at Cornell University studying Computer Science</p>
+            <p>
+                Interested in full stack devleopment:
+                <br>understanding what goes on in the front-end, back-end, and how everything connects together
+            </p>
+            <p>
+                Future MathWorker at <a href="https://www.mathworks.com/">The MathWorks</a>
             </p>
         </div>
     </div>
 </div>
 
 <div id="about">
-    <svg height="800" width="100%">
+    <div class="padding"></div>
+    <svg height="900" width="100%">
         <line x1="0" y1="100" x2="95%" y2="100" />
         <line x1="95%" y1="100" x2="75%" y2="650" />
         <line x1="0" y1="650" x2="75%" y2="650" />
@@ -50,9 +56,19 @@
     <img id="profile" src="images/VanessaProfilePicSquare.jpg" alt="Vanessa's profile picture">
     <h1 class="header">About Me</h1>
     <div class="text">
-        <p>Hi, I'm Vanessa! I'm a senior at Cornell University studying computer science 
-            and minoring in Electrical and Computer Engineering and Information Science (UX Concentration).</p>
-        <p>Outside of school, I like crochet, photography.</p>
+        <p>Hi, I'm Vanessa! I'm a senior at Cornell University majoring in computer science and
+             minoring in Electrical & Computer Engineering and Information Science. 
+            I've taken courses about hardware, software, and UX design, and most of my professional experience has involved web development.
+            Read on to learn more about what I've worked on in the past, or <a href="#contact">contact</a> me if you'd like to chat.
+        </p>
+        <p>In my free time, I like to...
+            <ul>
+                <li>Explore my surroundings with <a href="https://www.flickr.com/photos/183133776@N07/">photography</a></li>
+                <li>Help run the <a href="https://www.facebook.com/cornellorigamiclub/">Cornell Origami Club</a> as treasurer</li>
+                <li>Crochet amigurumi (maybe I'll learn how to knit too!)</li>
+                <li>Spend time <a href="https://www.flickr.com/photos/183133776@N07/50636657872/in/datetaken/">outdoors</a></li>
+            </ul>
+        </p>
     </div>
 </div>
 
@@ -60,16 +76,19 @@
     <h1>Work Experience</h1>
     <div class="section">
         <div class="preview">
-            <img class="caret" src="images/SVG/caret.svg">
+            <img class="mathworks caret" src="images/SVG/caret.svg" onclick="expand('mathworks')">
             <h2>Software Engineer Intern at MathWorks</h2>
             <h3>Utlized a search library to search over example documents</h3>
         </div>
-        <div class="expand">
+        <div class="mathworks expand">
             <p>I worked as a intern over the summer of 2020.</p>
             <div class="media">
                 <iframe src="https://cornellprod-my.sharepoint.com/personal/vw96_cornell_edu/_layouts/15/Doc.aspx?sourcedoc={f38b442d-abd0-44c7-8cef-45c9aa505435}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="500px" height="275px" frameborder="0">
                     This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
                 </iframe>
+                <div class="caption">
+                    Intern Presentation: Sandbox Search (August 2020)
+                </div>
                 <!-- <video width="500" height="275" controls>
                     <source src="media/videos/sandboxdemo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -79,27 +98,29 @@
     </div>
     <div class="section">
         <div class="preview">
-            <img class="caret" src="images/SVG/caret.svg">
-            <h2>Teacher Assistant for INFO 2300: Intermediate Design and Programming for the Web</h2>
+            <img class="info caret" src="images/SVG/caret.svg" onclick="expand('info')">
+            <h2>Teacher Assistant for INFO 2300</h2>
             <h3>Graded projects and co-led weekly discussion sections for an intermediate web design and programming class</h3>
-            
         </div>
-        <div class="expand">
+        <div class="info expand">
             <p>I worked as a teacher Assistant for INFO 2300: Intermediate design and programming for the web</p>
         </div>
     </div>
     <div class="section">
         <div class="preview">
-            <img class="caret" src="images/SVG/caret.svg">
+            <img class="surescripts caret" src="images/SVG/caret.svg" onclick="expand('surescripts')">
             <h2>Software Engineer Intern at Surescripts</h2>
             <h3>Created a customer activiation microsite</h3>
         </div>
-        <div class="expand">
+        <div class="surescripts expand">
         <p>Stuff Here</p>
-            <div class="media">
+            <div class="info media">
                 <iframe src="https://cornellprod-my.sharepoint.com/personal/vw96_cornell_edu/_layouts/15/Doc.aspx?sourcedoc={d54fa951-4c72-403c-ac08-5af2082e5609}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="500px" height="275px" frameborder="0">
                     This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.
                 </iframe>
+                <div class="caption">
+                    Intern Presentation: Customer Activation Microsite (August 2019)
+                </div>
             </div>
         </div>
     </div>
@@ -120,11 +141,11 @@
             <div>
                 <div class="image">
                     <button class="control left" onclick="switchToSlide('queue', -1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                     <img class="queue container" src="images/queue-me-in/queue.png">
                     <button class="control right" onclick="switchToSlide('queue', 1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                 </div>
                 <div class="images">
@@ -150,11 +171,11 @@
             <div>
                 <div class="image">
                     <button class="control left" onclick="switchToSlide('3420', -1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                     <img class="3420 container" src="images/ece-3420/device.JPG">
                     <button class="control right" onclick="switchToSlide('3420', 1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                 </div>
                 <div class="images">
@@ -176,11 +197,11 @@
             <div>
                 <div class="image">
                     <button class="control left" onclick="switchToSlide('2300', -1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                     <img class="2300 container" src="images/info-2300/home.png">
                     <button class="control right" onclick="switchToSlide('2300', 1)">
-                        <img class="caret" src="images/SVG/caret.svg">
+                        <img class="caret" src="images/SVG/caret_purple.svg">
                     </button>
                 </div>
                 <div class="images">
@@ -196,9 +217,14 @@
 
 <div id="contact">
     <h1>Contact</h1>
-    While I'm not looking for new jobs, feel free to contact me at wang.vanessa1@gmail.com for
-    potential opportunites! Or, feel free to ask me about anything!
+    I'm available to reach via email at wang.vanessa1@gmail.com.
+    Feel free to contact me about questions, potential job opportunites, or anything else! 
     <div>
+        <a class="send" href="Resume.pdf">
+            <button>
+                View Resume
+            </button>
+        </a>
         <a class="send" href="mailto:wang.vanessa1@gmail.com">
             <button>
                 Send a Message
@@ -215,7 +241,7 @@
         </small>
         |
         <small>
-            <a href="linkedin.com/in/vanessa-w-381939102/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/vanessa-w-381939102/" target="_blank">LinkedIn</a>
         </small>
     </div>
     

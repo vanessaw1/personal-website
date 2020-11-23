@@ -17,6 +17,14 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
 #header {
     background-color: $primary;
     color: $white;
@@ -65,7 +73,7 @@ h1 {
 }
 
 #intro {
-    height: 800px;
+    height: 735px;
 
     svg {
         margin-top: 80px;
@@ -77,10 +85,14 @@ h1 {
         }
     }
 
+    a {
+        color: $black;
+    }
+
     .text {
         .left {
             position: absolute;
-            top: 120px;
+            top: 170px;
             right: calc(50% + 60px);
             text-align: right;
             min-width: 500px;
@@ -96,20 +108,28 @@ h1 {
 
         .right {
             position: absolute;
-            top: 350px;
-            left: calc(50% + 60px);
-            font-size: 20px;
+            bottom: 270px;
+            left: calc(50% + 40px);
+            font-size: 25px;
+            width: 650px;
         }
     }
 }
 
 #about {
     margin-top: 40px;
-    padding-top: 15px;
+    padding-bottom: 15px;
     height: 800px;
     position: relative;
     background-color: $primary;
     color: $white;
+
+    
+    .padding {
+        background-color: $white;
+        height: 65px;
+    }
+
 
     svg {
         line {
@@ -121,7 +141,7 @@ h1 {
 
     #backdrop {
         position: absolute;
-        top: 150px;
+        top: 225px;
         left: 25%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -131,7 +151,7 @@ h1 {
 
     #profile {
         position: absolute;
-        top: 200px;
+        top: 275px;
         left: 25%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -141,7 +161,7 @@ h1 {
 
     h1 {
         position: absolute;
-        top: 25px;
+        top: 75px;
         right: 25%;
         width: 300px;
         padding: 10px 40px 0px;
@@ -150,13 +170,15 @@ h1 {
 
     .text {
         position: absolute;
-        top: 200px;
-        width: 30%;
-
+        top: 250px;
+        width: 35%;
+        min-width: 500px;
         left: calc(20% + 350px);
-        // -webkit-transform: translateX(-50%);
-        // transform: translateX(-50%);
         font-size: 20px;
+
+        a {
+            color: $white;
+        }
     }
 }
 
@@ -172,13 +194,14 @@ h1 {
         color: $white;
         background-color: $primary;
         margin: 25px 100px;
-        padding: 10px 30px 25px;
+        padding: 10px 30px 40px;
 
         .expand {
-            display: flex;
+            display: none;
             justify-content: space-between;
             align-items: center;
             align-items: flex-start;
+            font-size: 20px;
         }
 
         img {
@@ -194,21 +217,29 @@ h1 {
 
         .caret {
             float: right;
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
+            padding: 5px;
             border: none;
+            transform: rotate(0deg);
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 15px;
         }
     }
 }
 
 #projects{
     background-color: $primary;
+    margin-top: 100px;
     padding: 1px 0px 10px; 
 
     h1 {
         color: $white;
         margin: 50px 100px 0;
-        padding-top: 50px;
+        padding: 50px 0 20px;
     }
 
     .section {
@@ -231,11 +262,13 @@ h1 {
         img.container {
             height: 300px;
             width: 600px;
+            border: solid 2px $primary;
+            margin-bottom: 3px;
         }
 
         img.slides {
             vertical-align: text-top;
-            border: solid 2px $primary;
+            // border: solid 2px $primary;
             object-fit: cover;
             width: 70px;
             height: 70px;
@@ -255,7 +288,7 @@ h1 {
             width: 40px;
             height: 40px;
             border: none;
-            background-color: $primary;
+            background-color: $white;
             padding: 5px;
             text-align: center;
             cursor: pointer;
@@ -315,6 +348,10 @@ h1 {
         background-color: $white;
         color: $primary;
         padding: 15px 32px;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 
