@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script> 
 </head>
 
 <body>
@@ -21,10 +22,10 @@
 </div>
 
 <div id="intro">
-    <svg height="500" width="100%">
-        <line x1="0" y1="200" x2="40%" y2="200" />
-        <line x1="60%" y1="400" x2="100%" y2="400" />
-        <line x1="40%" y1="200" x2="60%" y2="400" />
+    <svg height="700" width="100%">
+        <line class="left" x1="0" y1="200" x2=50% y2="200" />
+        <line class="right" x1="50%" y1="600" x2="100%" y2="600" />
+        <line class="center" x1="50%" y1="200" x2="50%" y2="600" />
     </svg> 
     <div class="text">
         <div class="left">
@@ -39,14 +40,13 @@
 
 <div id="about">
     <svg height="800" width="100%">
-        <line x1="0" y1="100" x2="17%" y2="100" />
-        <line x1="35%" y1="100" x2="95%" y2="100" />
+        <line x1="0" y1="100" x2="95%" y2="100" />
         <line x1="95%" y1="100" x2="75%" y2="650" />
         <line x1="0" y1="650" x2="75%" y2="650" />
     </svg>
     <img id="backdrop" src="images/SVG/image_backdrop.svg">
     <img id="profile" src="images/VanessaProfilePicSquare.jpg" alt="Vanessa's profile picture">
-    <h1 src="header">About Me</h1>
+    <h1 class="header">About Me</h1>
     <div class="text">
         <p>Hi, I'm Vanessa! I'm a senior at Cornell University studying computer science 
             and minoring in Electrical and Computer Engineering and Information Science (UX Concentration).</p>
@@ -106,23 +106,90 @@
 <div id="projects">
     <h1>Projects</h1>
     <div class="section">
-        <h2>INFO 2300 Website Project</h2>
-        <img src="images/mathworksSquare.png">
-        <p>Description</p>
+        <h2>Cornell Design and Tech Initiative: Queue Me In</h2>
+        <div class="content">
+            <div class="description">
+                <p>Description</p>
+                <div class="icons">
+                    <a target="_blank" href="https://github.com/cornell-dti/office-hours"><img class="icon" src="images/icons/github.svg"></a>
+                    <a target="_blank" href="https://queueme.in"><img class="icon" src="images/icons/link.svg"></a>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <button class="control left" onclick="switchToSlide('queue', -1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                    <img class="queue container" src="images/queue-me-in/queue.png">
+                    <button class="control right" onclick="switchToSlide('queue', 1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                </div>
+                <div class="images">
+                    <img class="queue slides" src="images/queue-me-in/queue.png" onclick="changeSlide('queue', 0)">
+                    <img class="queue slides" src="images/queue-me-in/login.png" onclick="changeSlide('queue', 1)">
+                    <img class="queue slides" src="images/queue-me-in/prof.png" onclick="changeSlide('queue', 2)">
+                    <img class="queue slides" src="images/queue-me-in/question.png" onclick="changeSlide('queue', 3)">
+                    <img class="queue slides" src="images/queue-me-in/edit.png" onclick="changeSlide('queue', 4)">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section">
         <h2>ECE 3420 Final Project</h2>
-        <img src="images/mathworksSquare.png">
-        <p>Description</p>
-        <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/v_T4hbEhHoA">
-        </iframe> 
+        <div class="content">
+            <div class="description">
+                <p>Description</p>
+                <div class="icons">
+                    <a target="_blank" href="https://www.youtube.com/embed/v_T4hbEhHoA"><img class="icon" src="images/icons/video.png"></a>
+                    <a target="_blank" href="https://docs.google.com/document/d/1LNW0aMQvc_yDOTjLJIxNHwG2V6Ca7iSnYCfFQo6r098/edit?usp=sharing"><img class="icon" src="images/icons/link.svg"></a>
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <button class="control left" onclick="switchToSlide('3420', -1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                    <img class="3420 container" src="images/ece-3420/device.JPG">
+                    <button class="control right" onclick="switchToSlide('3420', 1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                </div>
+                <div class="images">
+                    <img class="3420 slides" src="images/ece-3420/device.JPG" onclick="changeSlide('3420', 0)">
+                    <img class="3420 slides" src="images/ece-3420/device_message.JPG" onclick="changeSlide('3420', 1)">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section">
-        <h2>Cornell Design and Tech Initiative: Queue Me In</h2>
-        <p>Description</p>
+        <h2>INFO 2300 Website Project</h2>
+        <div class="content">
+            <div class="description">
+                <p>Description</p>
+                <div class="icons">
+                    <!-- <a href="insert link here"><img src="images/icons/link.svg"></a> -->
+                </div>
+            </div>
+            <div>
+                <div class="image">
+                    <button class="control left" onclick="switchToSlide('2300', -1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                    <img class="2300 container" src="images/info-2300/home.png">
+                    <button class="control right" onclick="switchToSlide('2300', 1)">
+                        <img class="caret" src="images/SVG/caret.svg">
+                    </button>
+                </div>
+                <div class="images">
+                    <img class="2300 slides" src="images/info-2300/home.png" onclick="changeSlide('2300', 0)">
+                    <img class="2300 slides" src="images/info-2300/filter.png" onclick="changeSlide('2300', 1)">
+                    <img class="2300 slides" src="images/info-2300/image.png" onclick="changeSlide('2300', 2)">
+                    <img class="2300 slides" src="images/info-2300/upload.png" onclick="changeSlide('2300', 3)">
+                </div>
+            </div>
+        </div>
     </div>
-    
 </div>
 
 <div id="contact">
@@ -140,7 +207,16 @@
 
 <div id="footer">
     <small>&copy; Vanessa Wang 2020</small>
-    <small>wang.vanessa1@gmail.com | linkedin.com/in/vanessa-w-381939102/</small>
+    <div>
+        <small>
+            <a href="mailto:wang.vanessa1@gmail.com">wang.vanessa1@gmail.com</a>
+        </small>
+        |
+        <small>
+            <a href="linkedin.com/in/vanessa-w-381939102/">LinkedIn</a>
+        </small>
+    </div>
+    
 </div>
 
 

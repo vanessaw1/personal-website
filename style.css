@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 65px;
   text-align: center;
 }
 
@@ -19,6 +19,7 @@ h1 {
 }
 #header .logo {
   font-size: 35px;
+  min-width: 220px;
 }
 #header .nav {
   align-items: center;
@@ -44,8 +45,11 @@ h1 {
   padding: 18px 30px;
 }
 
+#intro {
+  height: 800px;
+}
 #intro svg {
-  margin: auto;
+  margin-top: 40px;
 }
 #intro svg line {
   stroke: #3c3744;
@@ -54,24 +58,27 @@ h1 {
 }
 #intro .text .left {
   position: absolute;
-  top: 160px;
-  left: 15%;
+  top: 150px;
+  right: calc(50% + 60px);
   text-align: right;
+  min-width: 500px;
 }
 #intro .text .left .name {
-  font-size: 50px;
+  font-size: 75px;
 }
 #intro .text .left .title {
-  font-size: 30px;
+  font-size: 50px;
 }
 #intro .text .right {
   position: absolute;
-  top: 260px;
-  left: 50%;
+  top: 350px;
+  left: calc(50% + 60px);
   font-size: 20px;
 }
 
 #about {
+  height: 800px;
+  position: relative;
   background-color: #6D64B9;
   color: #fbfff1;
 }
@@ -82,30 +89,35 @@ h1 {
 }
 #about #backdrop {
   position: absolute;
-  top: 720px;
-  left: 11%;
+  top: 150px;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 400px;
   height: 400px;
 }
 #about #profile {
   position: absolute;
-  top: 770px;
-  left: 15%;
+  top: 200px;
+  left: 25%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 300px;
   height: 300px;
 }
 #about h1 {
   position: absolute;
-  top: 614px;
-  left: 18%;
+  top: 20px;
+  right: 25%;
   width: 300px;
-  height: 300px;
+  padding: 0px 40px;
+  background-color: #6D64B9;
 }
 #about .text {
   position: absolute;
-  top: 750px;
-  width: 400px;
-  left: 45%;
+  top: 200px;
+  width: 30%;
+  left: calc(20% + 350px);
   font-size: 20px;
 }
 
@@ -155,18 +167,63 @@ h1 {
   margin: 25px 100px;
   padding: 10px 30px 25px;
 }
-#projects .section img {
-  vertical-align: text-top;
-  border: solid 5px #6D64B9;
-  width: 300px;
+#projects .section .content {
+  display: flex;
+  justify-content: space-between;
+}
+#projects .section .icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+#projects .section img.container {
   height: 300px;
+  width: 600px;
+}
+#projects .section img.slides {
+  vertical-align: text-top;
+  border: solid 2px #6D64B9;
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  opacity: 0.4;
+}
+#projects .section img.slides:first-child {
+  opacity: 1;
+}
+#projects .section img.slides:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#projects .section button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #6D64B9;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+#projects .section .image {
+  display: flex;
+  align-items: center;
+}
+#projects .section .images {
+  margin-left: 40px;
+}
+#projects .section .left {
+  transform: rotate(90deg);
+}
+#projects .section .right {
+  transform: rotate(-90deg);
 }
 #projects .section p {
   display: inline;
 }
 
 #contact {
-  margin: 50px 100px;
+  height: 550px;
+  margin: 250px 100px 50px;
   text-align: center;
   font-size: 20px;
 }
@@ -184,10 +241,7 @@ h1 {
   cursor: pointer;
   display: inline-block;
   font-size: 23px;
-  margin-top: 30px;
-}
-#contact button a {
-  text-decoration: none;
+  margin-top: 50px;
 }
 #contact button:hover {
   border: solid 5px #6D64B9;
@@ -204,6 +258,10 @@ h1 {
   background-color: #6D64B9;
   color: #fbfff1;
   font-size: 20px;
+}
+#footer a {
+  color: #fbfff1;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
