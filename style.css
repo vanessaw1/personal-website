@@ -7,19 +7,29 @@ body {
   background-color: #fbfff1;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+body .wide {
+  display: inline;
+}
+body .responsive {
+  display: none;
+}
 
 h1 {
-  font-size: 65px;
+  font-size: 60px;
   text-align: center;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: normal;
+}
+
+p {
+  font-size: 19px;
 }
 
 #header {
@@ -76,23 +86,26 @@ h3 {
 }
 #intro .text .left {
   position: absolute;
-  top: 170px;
-  right: calc(50% + 60px);
+  top: 190px;
+  right: calc(50% + 35px);
   text-align: right;
   min-width: 500px;
 }
 #intro .text .left .name {
-  font-size: 75px;
+  font-size: 65px;
+  text-align: right;
 }
 #intro .text .left .title {
-  font-size: 50px;
+  font-size: 40px;
 }
 #intro .text .right {
   position: absolute;
-  top: 375px;
-  left: calc(50% + 40px);
-  font-size: 25px;
-  width: 650px;
+  top: 350px;
+  left: calc(50% + 35px);
+  width: 500px;
+}
+#intro .text .right p {
+  font-size: 23px;
 }
 
 #about {
@@ -112,23 +125,15 @@ h3 {
   stroke-width: 5;
   stroke-linecap: round;
 }
-#about #backdrop {
-  position: absolute;
-  top: 225px;
-  left: 25%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 400px;
-  height: 400px;
-}
 #about #profile {
   position: absolute;
-  top: 275px;
+  top: 250px;
   left: 25%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 300px;
-  height: 300px;
+  max-width: 400px;
+  max-height: 400px;
+  width: 25%;
 }
 #about h1 {
   position: absolute;
@@ -142,9 +147,11 @@ h3 {
   position: absolute;
   top: 250px;
   width: 35%;
-  min-width: 500px;
-  left: calc(20% + 350px);
-  font-size: 20px;
+  min-width: 450px;
+  left: 22%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  font-size: 18px;
 }
 #about .text a {
   color: #fbfff1;
@@ -341,6 +348,94 @@ h3 {
 #footer a {
   color: #fbfff1;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  body .wide {
+    display: none;
+  }
+  body .responsive {
+    display: inline;
+  }
+
+  #intro {
+    height: 735px;
+  }
+  #intro svg {
+    margin-top: 220px;
+  }
+  #intro .text {
+    text-align: center;
+  }
+  #intro .text .left {
+    text-align: center;
+    left: 50%;
+    top: 180px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: none;
+  }
+  #intro .text .left .name {
+    text-align: center;
+  }
+  #intro .text .right {
+    text-align: center;
+    left: 50%;
+    top: 450px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: none;
+    width: 80%;
+  }
+
+  #about {
+    margin-top: 0px;
+    height: auto;
+  }
+  #about h1 {
+    top: 55px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  #about #profile {
+    position: relative;
+    top: 75px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 400px;
+  }
+  #about .text {
+    position: initial;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 70%;
+    left: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  #experience .section .expand {
+    flex-direction: column;
+    align-items: center;
+  }
+  #experience .section .expand .text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #projects .section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  #projects .section .content .text {
+    margin-bottom: 20px;
+  }
+  #projects .section .content .text .icons {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

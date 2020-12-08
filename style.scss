@@ -10,20 +10,32 @@ body {
     margin: 0;
     background-color: $white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    .wide {
+        display: inline;
+    }
+
+    .responsive {
+        display: none;
+    }
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 60px;
     text-align: center;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: normal;
+}
+
+p {
+    font-size: 19px;
 }
 
 #header {
@@ -67,11 +79,10 @@ h3 {
             padding: 0px 20px;
             list-style-type: none;
         }
-
-        
     }
-
 }
+
+
 
 #intro {
     height: 735px;
@@ -93,26 +104,30 @@ h3 {
     .text {
         .left {
             position: absolute;
-            top: 170px;
-            right: calc(50% + 60px);
+            top: 190px;
+            right: calc(50% + 35px);
             text-align: right;
             min-width: 500px;
 
             .name {
-                font-size: 75px;
+                font-size: 65px;
+                text-align: right;
             }
 
             .title {
-                font-size: 50px;
+                font-size: 40px;
             }
         }
 
         .right {
             position: absolute;
-            top: 375px;
-            left: calc(50% + 40px);
-            font-size: 25px;
-            width: 650px;
+            top: 350px;
+            left: calc(50% + 35px);
+            width: 500px;
+
+            p {
+                font-size: 23px;
+            }
         }
     }
 }
@@ -140,24 +155,16 @@ h3 {
         }
     }
 
-    #backdrop {
-        position: absolute;
-        top: 225px;
-        left: 25%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 400px;
-        height: 400px;
-    }
-
     #profile {
         position: absolute;
-        top: 275px;
+        top: 250px;
         left: 25%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width: 300px;
-        height: 300px;
+        max-width: 400px;
+        max-height: 400px;
+        width: 25%;
+        // height: 20%;
     }
 
     h1 {
@@ -173,9 +180,11 @@ h3 {
         position: absolute;
         top: 250px;
         width: 35%;
-        min-width: 500px;
-        left: calc(20% + 350px);
-        font-size: 20px;
+        min-width: 450px;
+        left: 22%;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        font-size: 18px;
 
         a {
             color: $white;
@@ -251,7 +260,7 @@ h3 {
     }
 }
 
-#projects{
+#projects {
     background-color: $primary;
     margin-top: 100px;
     padding: 1px 0px 10px; 
@@ -408,5 +417,117 @@ h3 {
     a {
         color: $white;
         text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        .wide {
+            display: none;
+        }
+
+        .responsive {
+            display: inline;
+        }
+    }
+
+    #intro {
+        height: 735px;
+    
+        svg {
+            margin-top: 220px;
+        }
+    
+        .text {
+            text-align: center;
+
+            .left {
+                text-align: center;
+                left: 50%;
+                top: 180px;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                min-width: none;
+
+                .name {
+                    text-align: center;
+                }
+            }
+    
+            .right {
+                text-align: center;
+                left: 50%;
+                top: 450px;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                min-width: none;
+                width: 80%;
+            }
+        }
+    }
+
+    #about {
+        margin-top: 0px;
+        height: auto;
+
+        h1 {
+            top: 55px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    
+        #profile {
+            position: relative;
+            top: 75px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 400px;
+        }
+    
+        .text {
+            position: initial;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            width: 70%;
+            left: 0;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    #experience {
+        .section { 
+            .expand {
+                flex-direction: column;
+                align-items: center;
+
+                .text {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+            }
+        }
+    }
+
+    #projects {
+        .section { 
+            .content {
+                flex-direction: column;
+                align-items: center;
+
+                .text {
+                    margin-bottom: 20px;
+
+                    .icons {
+                        padding-top: 0;
+                    }
+                }
+
+            }
+        }
     }
 }
