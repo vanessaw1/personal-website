@@ -508,7 +508,6 @@ p {
                     margin-right: 0;
                     margin-bottom: 20px;
                 }
-
             }
         }
     }
@@ -527,6 +526,15 @@ p {
                     }
                 }
 
+                img.container {
+                    height: auto;
+                    width: 80%;
+                    min-width: 400px;
+                }
+            }
+
+            .image {
+                justify-content: center;
             }
         }
     }

@@ -436,6 +436,14 @@ p {
   #projects .section .content .text .icons {
     padding-top: 0;
   }
+  #projects .section .content img.container {
+    height: auto;
+    width: 80%;
+    min-width: 400px;
+  }
+  #projects .section .image {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
