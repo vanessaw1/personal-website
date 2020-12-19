@@ -1,6 +1,6 @@
 $primary: #6D64B9;
 $black: #3c3744;
-$white: #fbfff1;
+$white: #fffff0;
 
 html {
     scroll-behavior: smooth;
@@ -44,7 +44,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
-    height: 35px;
+    height: 40px;
     position: fixed;
     width: calc(100% - 60px);
     z-index: 1;
@@ -67,7 +67,8 @@ p {
 
     .nav {
         align-items: center;
-        font-size: 30px;
+        margin-top: 5px;
+        font-size: 25px;
 
         ul {
             margin: 0;
@@ -157,7 +158,7 @@ p {
 
     #profile {
         position: absolute;
-        top: 250px;
+        top: 225px;
         left: 25%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -178,7 +179,7 @@ p {
 
     .text {
         position: absolute;
-        top: 250px;
+        top: 300px;
         width: 35%;
         min-width: 450px;
         left: 22%;
@@ -318,11 +319,11 @@ p {
 
         img.slides {
             vertical-align: text-top;
-            // border: solid 2px $primary;
+            border: solid 1px $primary;
             object-fit: cover;
             width: 70px;
             height: 70px;
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
         img.slides:first-child {

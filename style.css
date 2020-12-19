@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #fbfff1;
+  background-color: #fffff0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 body .wide {
@@ -34,19 +34,19 @@ p {
 
 #header {
   background-color: #6D64B9;
-  color: #fbfff1;
+  color: #fffff0;
   display: flex;
   justify-content: space-between;
   padding: 15px 30px;
-  height: 35px;
+  height: 40px;
   position: fixed;
   width: calc(100% - 60px);
   z-index: 1;
-  border-bottom: solid 5px #fbfff1;
+  border-bottom: solid 5px #fffff0;
 }
 #header a {
   text-decoration: none;
-  color: #fbfff1;
+  color: #fffff0;
 }
 #header a:hover {
   cursor: pointer;
@@ -58,7 +58,8 @@ p {
 }
 #header .nav {
   align-items: center;
-  font-size: 30px;
+  margin-top: 5px;
+  font-size: 25px;
 }
 #header .nav ul {
   margin: 0;
@@ -114,20 +115,20 @@ p {
   height: 800px;
   position: relative;
   background-color: #6D64B9;
-  color: #fbfff1;
+  color: #fffff0;
 }
 #about .padding {
-  background-color: #fbfff1;
+  background-color: #fffff0;
   height: 65px;
 }
 #about svg line {
-  stroke: #fbfff1;
+  stroke: #fffff0;
   stroke-width: 5;
   stroke-linecap: round;
 }
 #about #profile {
   position: absolute;
-  top: 250px;
+  top: 225px;
   left: 25%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -145,7 +146,7 @@ p {
 }
 #about .text {
   position: absolute;
-  top: 250px;
+  top: 300px;
   width: 35%;
   min-width: 450px;
   left: 22%;
@@ -154,7 +155,7 @@ p {
   font-size: 18px;
 }
 #about .text a {
-  color: #fbfff1;
+  color: #fffff0;
 }
 
 #experience {
@@ -165,7 +166,7 @@ p {
   margin: 50px 100px 0;
 }
 #experience .section {
-  color: #fbfff1;
+  color: #fffff0;
   background-color: #6D64B9;
   margin: 25px 100px;
   padding: 10px 30px 40px;
@@ -184,11 +185,11 @@ p {
   margin-right: 50px;
 }
 #experience .section .expand a {
-  color: #fbfff1;
+  color: #fffff0;
 }
 #experience .section img {
   vertical-align: text-top;
-  border: solid 5px #fbfff1;
+  border: solid 5px #fffff0;
   width: 300px;
   height: 300px;
 }
@@ -221,13 +222,13 @@ p {
   padding: 1px 0px 10px;
 }
 #projects h1 {
-  color: #fbfff1;
+  color: #fffff0;
   margin: 50px 100px 0;
   padding: 50px 0 20px;
 }
 #projects .section {
   color: #3c3744;
-  background-color: #fbfff1;
+  background-color: #fffff0;
   margin: 25px 100px;
   padding: 10px 30px 25px;
 }
@@ -266,10 +267,11 @@ p {
 }
 #projects .section img.slides {
   vertical-align: text-top;
+  border: solid 1px #6D64B9;
   object-fit: cover;
   width: 70px;
   height: 70px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 #projects .section img.slides:first-child {
   opacity: 1;
@@ -282,7 +284,7 @@ p {
   width: 40px;
   height: 40px;
   border: none;
-  background-color: #fbfff1;
+  background-color: #fffff0;
   padding: 5px;
   text-align: center;
   cursor: pointer;
@@ -320,7 +322,7 @@ p {
   background-color: #6D64B9;
   padding: 15px 32px;
   text-align: center;
-  color: #fbfff1;
+  color: #fffff0;
   cursor: pointer;
   display: inline-block;
   font-size: 23px;
@@ -328,7 +330,7 @@ p {
 }
 #contact button:hover {
   border: solid 5px #6D64B9;
-  background-color: #fbfff1;
+  background-color: #fffff0;
   color: #6D64B9;
   padding: 15px 32px;
 }
@@ -342,11 +344,11 @@ p {
   height: 20px;
   padding: 15px 30px;
   background-color: #6D64B9;
-  color: #fbfff1;
+  color: #fffff0;
   font-size: 20px;
 }
 #footer a {
-  color: #fbfff1;
+  color: #fffff0;
   text-decoration: none;
 }
 
